@@ -14,10 +14,7 @@ def line(array)
 end
 end
 
-# if the array is empty, add name and puts welcome message
-# if array is not empty, add name and puts welcome message
-# each person will need an index so they can have a place in line
-# other_deli = [Logan Avi Spencer]
+# add name to array and puts welcome message with correct index
 def take_a_number(array, name)
   place = array.length+1
   if array == []
@@ -25,10 +22,8 @@ def take_a_number(array, name)
     puts "Welcome, " + array.join(', ') + ". You are number #{place} in line."
     array
 
-  # if there are already people in line, it should add a person to the end of the line. adding multiple people in a row, should correctly build the line
-  # expect($stdout).to receive(:puts).with("Welcome, Grace. You are number 4 in line.")
-  # take_a_number(other_deli, "Grace")
-  # expect(other_deli).to eq(%w(Logan Avi Spencer Grace))
+  # if there are already people in line, it should add a person to the end of the line
+  # adding multiple people in a row should correctly build the line
   else array != []
     array.push(name)
     puts "Welcome, #{name}. You are number #{place} in line."
@@ -37,7 +32,7 @@ def take_a_number(array, name)
 end
 
 # puts the next person in line, then remove them from the front
-# If there is nobody in line, it should call out (puts) that "There is nobody waiting to be served!".
+# If there is nobody in line, puts "There is nobody waiting to be served!"
 def now_serving(array)
   if array == []
     puts "There is nobody waiting to be served!"
