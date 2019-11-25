@@ -32,7 +32,6 @@ def take_a_number(array, name)
   else array != []
     array.push(name)
     puts "Welcome, #{name}. You are number #{place} in line."
-    place += 1
     array
   end
 end
