@@ -24,7 +24,7 @@ def take_a_number(array, name)
   if array == []
     new_line << name
     puts "Welcome, " + new_line.join(', ') + ". You are number #{place} in line."
-    puts array + new_line
+    new_line
 
   # if there are already people in line, it should add a person to the end of the line. adding multiple people in a row, should correctly build the line
   else array != []
