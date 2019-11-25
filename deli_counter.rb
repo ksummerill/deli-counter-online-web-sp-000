@@ -36,6 +36,7 @@ def take_a_number(array, name)
     place += 1
     array
   end
+  end
 end
 
 # puts the next person in line, then remove them from the front
