@@ -19,7 +19,6 @@ end
 # each person will need an index so they can have a place in line
 # other_deli = [Logan Avi Spencer]
 def take_a_number(array, name)
-  # new_line = []
   place = 1
   if array == []
     array.push(name)
