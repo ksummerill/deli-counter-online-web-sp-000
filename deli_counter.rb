@@ -30,12 +30,10 @@ def take_a_number(array, name)
   # take_a_number(other_deli, "Grace")
   # expect(other_deli).to eq(%w(Logan Avi Spencer Grace))
   else array != []
-    while place <= array.length-1
     array.push(name)
     puts "Welcome, #{name}. You are number #{place} in line."
     place += 1
     array
-  end
   end
 end
 
