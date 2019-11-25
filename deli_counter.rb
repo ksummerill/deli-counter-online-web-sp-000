@@ -40,5 +40,8 @@ end
 def now_serving(array)
   if array = []
     puts "There is nobody waiting to be served!"
+  elsif array != []
+    puts "Currently serving #{array.first}"
+
   end
 end
