@@ -19,7 +19,7 @@ end
 # each person will need an index so they can have a place in line
 # other_deli = [Logan Avi Spencer]
 def take_a_number(array, name)
-  place = 1
+  place = array.length
   if array == []
     array.push(name)
     puts "Welcome, " + array.join(', ') + ". You are number #{place} in line."
