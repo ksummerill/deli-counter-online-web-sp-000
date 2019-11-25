@@ -31,8 +31,8 @@ def take_a_number(array, name)
   end
 end
 
-# puts the next person in line, then remove them from the front
-# If there is nobody in line, puts "There is nobody waiting to be served!"
+# puts the next person in line, then removes them from the front
+# if there is nobody in line, puts "There is nobody waiting to be served!"
 def now_serving(array)
   if array == []
     puts "There is nobody waiting to be served!"
