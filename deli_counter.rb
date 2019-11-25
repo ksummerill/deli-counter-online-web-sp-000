@@ -19,19 +19,19 @@ end
 # each person will need an index so they can have a place in line
 # other_deli = [Logan Avi Spencer]
 def take_a_number(array, name)
-  new_line = []
+  # new_line = []
   place = 1
   if array == []
-    new_line.push(name)
-    puts "Welcome, " + new_line.join(', ') + ". You are number #{place} in line."
-    new_line
+    array.push(name)
+    puts "Welcome, " + array.join(', ') + ". You are number #{place} in line."
+    array
 
   # if there are already people in line, it should add a person to the end of the line. adding multiple people in a row, should correctly build the line
   else array != []
-    new_line.push(name)
-    puts "Welcome, " + new_line.join(', ') + ". You are number #{place +3} in line."
+    array.push(name)
+    puts "Welcome, " + array.join(', ') + ". You are number #{place +3} in line."
     place += 1
-    new_line
+    array
   end
 end
 
