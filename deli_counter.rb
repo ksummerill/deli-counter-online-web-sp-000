@@ -31,5 +31,6 @@ def take_a_number(array, name)
     new_line << name
     puts "Welcome, " + new_line.join(', ') + ". You are number #{place +3} in line."
     place += 1
+    new_line
   end
 end
