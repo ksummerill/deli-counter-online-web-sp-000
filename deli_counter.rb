@@ -34,3 +34,8 @@ def take_a_number(array, name)
     new_line
   end
 end
+
+# puts the next person in line, then remove them from the front
+def now_serving(array, name)
+
+end
