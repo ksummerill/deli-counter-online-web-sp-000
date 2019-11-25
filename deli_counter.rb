@@ -43,5 +43,6 @@ def now_serving(array)
   else array != []
     puts "Currently serving " + array.first
     array.shift
+    array
   end
 end
