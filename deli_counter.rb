@@ -26,9 +26,12 @@ def take_a_number(array, name)
     array
 
   # if there are already people in line, it should add a person to the end of the line. adding multiple people in a row, should correctly build the line
+  # expect($stdout).to receive(:puts).with("Welcome, Grace. You are number 4 in line.")
+  # take_a_number(other_deli, "Grace")
+  # expect(other_deli).to eq(%w(Logan Avi Spencer Grace))
   else array != []
     array.push(name)
-    puts "Welcome, " + array.join(', ') + ". You are number #{place +3} in line."
+    puts "Welcome, #{name}. You are number #{place} in line."
     place += 1
     array
   end
