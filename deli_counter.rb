@@ -22,13 +22,13 @@ def take_a_number(array, name)
   new_line = []
   place = 1
   if array == []
-    new_line << name
+    new_line.push("nala cat")
     puts "Welcome, " + new_line.join(', ') + ". You are number #{place} in line."
     new_line
 
   # if there are already people in line, it should add a person to the end of the line. adding multiple people in a row, should correctly build the line
   else array != []
-    new_line << name
+    new_line.push("nala cat")
     puts "Welcome, " + new_line.join(', ') + ". You are number #{place +3} in line."
     place += 1
     new_line
@@ -42,6 +42,6 @@ def now_serving(array)
     puts "There is nobody waiting to be served!"
   elsif array != []
     puts "Currently serving #{array.first}"
-
+    array.shift
   end
 end
