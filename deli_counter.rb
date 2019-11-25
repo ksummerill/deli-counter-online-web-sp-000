@@ -33,7 +33,7 @@ def take_a_number(array, name)
     while place <= array.length-1
     array.push(name)
     puts "Welcome, #{name}. You are number #{place} in line."
-    # place += 1
+    place += 1
     array
   end
 end
